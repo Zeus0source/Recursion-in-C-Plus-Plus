@@ -25,6 +25,56 @@ The concept of recursion was understood by the following codes,
 + Factorial using recursion
 + sum of integers using recursion
 + reversal of string and integers using recursion
-  
+
+# Algorithms:
+
+Algorithm: Reverse a String Using Recursion
+
+1. Start
+2. Declare a character array `ch[50]`.
+3. Prompt the user to *"Enter a string"* and read input into `ch`.
+4. Define a recursive function `rev(char* str)`:
+   1. If `*str` is not null (`\0`):
+       Call `rev(str + 1)` recursively.
+        Print the current character `*str`.
+5. In `main()`, call `rev(ch)` to display the reversed string.
+6. End
+
+
+Algorithm: Reverse an Integer Using Recursion
+
+1. Start
+2. Declare an integer variable `a`.
+3. Prompt the user to *"Enter the number"* and read input into `a`.
+4. Define a recursive function `revint(int a)`:
+   1. If `a > 0`:
+      * Print `a % 10` (the last digit of `a`).
+      * Call `revint(a / 10)` recursively (removing the last digit).
+5. In `main()`, call `revint(a)` to display the number in reverse.
+6. End
+
+Algorithm: Sum of First n Natural Numbers Using Recursion
+
+1. Start
+2. Declare an integer variable `n` and another variable `a` for storing the result.
+3. Prompt the user to *"Enter a number"* and read input into `n`.
+4. Define a recursive function `add(int n)`:
+   1. If `n <= 1`, return 1.
+   2. Else, return `n + add(n-1)` (sum of `n` and the sum of first `n-1` numbers).
+5. In `main()`, call `add(n)` and store the result in `a`.
+6. Display the value of `a`.
+7. End
+
+Algorithm: Factorial Using Recursion
+
+1. Start
+2. Declare an integer variable `x` and another variable `A` to store the factorial.
+3. Prompt the user to *"Enter the number"* and read input into `x`.
+4. Define a recursive function `fact(int x)`:
+   1. If `x <= 1`, return 1.
+   2. Else, return `x * fact(x-1)` (multiply `x` by factorial of `x-1`).
+5. In `main()`, call `fact(x)` and store the result in `A`.
+6. Display `"The factorial is : "` followed by `A`.
+7. End
 # Concusion:
 The above codes demonstrate the concept of recursion in C++
